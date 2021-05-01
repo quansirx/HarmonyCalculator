@@ -1,0 +1,49 @@
+{
+  "app": {
+    "bundleName": "com.xwg.harmonycalulator",
+    "vendor": "xwg",
+    "version": {
+      "code": 1,
+      "name": "1.7"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 5,
+      "releaseType": "Release"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.xwg.harmonycalulator",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.xwg.harmonycalulator.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "Harmony计算器",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
